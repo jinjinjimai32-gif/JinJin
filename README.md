@@ -41,6 +41,7 @@ python denoise.py input.png output.png --method adaptive7
 - `run_experiment.py`：固定种子、批量处理、计时、CSV 和图片导出。
 - `src/metrics.py`：显式实现 PSNR 与 SSIM。
 - `test_correctness.py`：独立逐像素参考实现与边界、指标检查。
+- [宋体排版 Word 报告](20245614-金民宇-人工智能2403.docx)：与提交版一致，保留姓名、学号、班级和排版。
 - [report.md](report.md)：完整报告，包含老师要求的任务、数据、代码修改、结果对比和仓库地址。
 - `docs/code_changes.patch`：起始入口到最终入口的差异；算法细节在 src/filters.py。
 - `results/metrics.csv`：全部逐样本数值；`results/summary.json`：汇总、运行环境、文件 SHA-256。
