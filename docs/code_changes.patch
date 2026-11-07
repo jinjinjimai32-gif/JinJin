@@ -1,0 +1,30 @@
+--- baseline_v1.py
++++ denoise.py
+@@ -1,16 +1,16 @@
+-"""Preserved starting version: a single 3x3 median on a grayscale image."""
++"""Process a user-supplied image using the selected median filter."""
+ import argparse
+ import numpy as np
+ from PIL import Image
+-from numpy.lib.stride_tricks import sliding_window_view
++from src.filters import fixed_median, adaptive_median, switching_median
+ 
+ if __name__ == '__main__':
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument('input')
+-    parser.add_argument('output')
+-    args = parser.parse_args()
+-    image = np.asarray(Image.open(args.input).convert('L'))
+-    padded = np.pad(image, 1, mode='symmetric')
+-    windows = sliding_window_view(padded, (3, 3))
+-    output = np.median(windows, axis=(-2, -1)).astype(np.uint8)
+-    Image.fromarray(output).save(args.output)
++    p = argparse.ArgumentParser()
++    p.add_argument('input')
++    p.add_argument('output')
++    p.add_argument('--method', choices=['median3','median5','switching3','adaptive7'], default='adaptive7')
++    a = p.parse_args()
++    methods = {'median3': lambda x: fixed_median(x,3), 'median5': lambda x: fixed_median(x,5),
++               'switching3': switching_median, 'adaptive7': adaptive_median}
++    image = np.asarray(Image.open(a.input).convert('L'))
++    Image.fromarray(methods[a.method](image)).save(a.output)

@@ -1,0 +1,211 @@
+{
+  "summary": [
+    {
+      "density": 0.05,
+      "method": "noisy",
+      "n": 12,
+      "psnr_mean": 18.2824265544923,
+      "psnr_std": 0.4521150638832168,
+      "ssim_mean": 0.3959443079370564,
+      "runtime_ms_mean": 0.01693333333226595
+    },
+    {
+      "density": 0.05,
+      "method": "median3",
+      "n": 12,
+      "psnr_mean": 29.568642692990064,
+      "psnr_std": 6.999127261587048,
+      "ssim_mean": 0.8639688255116081,
+      "runtime_ms_mean": 4.370283333344105
+    },
+    {
+      "density": 0.05,
+      "method": "median5",
+      "n": 12,
+      "psnr_mean": 26.5340042580321,
+      "psnr_std": 6.6728940387031255,
+      "ssim_mean": 0.7586432249228521,
+      "runtime_ms_mean": 11.027766666681297
+    },
+    {
+      "density": 0.05,
+      "method": "switching3",
+      "n": 12,
+      "psnr_mean": 40.01201034652399,
+      "psnr_std": 6.978497905305778,
+      "ssim_mean": 0.9919520479414743,
+      "runtime_ms_mean": 4.624391666671575
+    },
+    {
+      "density": 0.05,
+      "method": "adaptive7",
+      "n": 12,
+      "psnr_mean": 33.40956801459925,
+      "psnr_std": 6.877503869078995,
+      "ssim_mean": 0.9465099407370975,
+      "runtime_ms_mean": 55.102658333320655
+    },
+    {
+      "density": 0.15,
+      "method": "noisy",
+      "n": 12,
+      "psnr_mean": 13.445036504437205,
+      "psnr_std": 0.4463738505652488,
+      "ssim_mean": 0.17986000736926655,
+      "runtime_ms_mean": 0.004633333333003975
+    },
+    {
+      "density": 0.15,
+      "method": "median3",
+      "n": 12,
+      "psnr_mean": 27.524126925232068,
+      "psnr_std": 5.771627694756074,
+      "ssim_mean": 0.8412514083889717,
+      "runtime_ms_mean": 4.527566666676345
+    },
+    {
+      "density": 0.15,
+      "method": "median5",
+      "n": 12,
+      "psnr_mean": 26.237542765022756,
+      "psnr_std": 6.658961710291859,
+      "ssim_mean": 0.7532488900788422,
+      "runtime_ms_mean": 11.445183333288847
+    },
+    {
+      "density": 0.15,
+      "method": "switching3",
+      "n": 12,
+      "psnr_mean": 32.73197206500618,
+      "psnr_std": 4.692572786179716,
+      "ssim_mean": 0.9674504595683743,
+      "runtime_ms_mean": 4.997041666664852
+    },
+    {
+      "density": 0.15,
+      "method": "adaptive7",
+      "n": 12,
+      "psnr_mean": 32.225768445563794,
+      "psnr_std": 7.001423455850504,
+      "ssim_mean": 0.9403349011055894,
+      "runtime_ms_mean": 57.329708333289396
+    },
+    {
+      "density": 0.3,
+      "method": "noisy",
+      "n": 12,
+      "psnr_mean": 10.396114042818754,
+      "psnr_std": 0.4604910865509645,
+      "ssim_mean": 0.09903638046211517,
+      "runtime_ms_mean": 0.006900000016685226
+    },
+    {
+      "density": 0.3,
+      "method": "median3",
+      "n": 12,
+      "psnr_mean": 21.61412625321878,
+      "psnr_std": 2.5136708099993967,
+      "ssim_mean": 0.6714067739736952,
+      "runtime_ms_mean": 5.130441666646372
+    },
+    {
+      "density": 0.3,
+      "method": "median5",
+      "n": 12,
+      "psnr_mean": 25.52030388558717,
+      "psnr_std": 6.452629924118411,
+      "ssim_mean": 0.7414328226662762,
+      "runtime_ms_mean": 13.062658333353738
+    },
+    {
+      "density": 0.3,
+      "method": "switching3",
+      "n": 12,
+      "psnr_mean": 24.158559555909942,
+      "psnr_std": 1.9621817625319506,
+      "ssim_mean": 0.8217872221466479,
+      "runtime_ms_mean": 5.272166666638138
+    },
+    {
+      "density": 0.3,
+      "method": "adaptive7",
+      "n": 12,
+      "psnr_mean": 29.797973117890095,
+      "psnr_std": 6.85903912897802,
+      "ssim_mean": 0.9129450276524715,
+      "runtime_ms_mean": 72.95222500003244
+    }
+  ],
+  "data": [
+    {
+      "name": "camera",
+      "original_size": [
+        512,
+        512
+      ],
+      "processed_size": [
+        256,
+        256
+      ],
+      "sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a"
+    },
+    {
+      "name": "coins",
+      "original_size": [
+        384,
+        303
+      ],
+      "processed_size": [
+        256,
+        202
+      ],
+      "sha256": "f8d773fc9cfa6f4d8e5942dc34d0a0788fcaed2a4fefbbed0aef5398d7ef4cba"
+    },
+    {
+      "name": "moon",
+      "original_size": [
+        512,
+        512
+      ],
+      "processed_size": [
+        256,
+        256
+      ],
+      "sha256": "78739619d11f7eb9c165bb5d2efd4772cee557812ec847532dbb1d92ef71f577"
+    },
+    {
+      "name": "page",
+      "original_size": [
+        384,
+        191
+      ],
+      "processed_size": [
+        256,
+        127
+      ],
+      "sha256": "341a6f0a61557662b02734a9b6e56ec33a915b2c41886b97509dedf2a43b47a3"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "13.0.0",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "protocol": {
+    "densities": [
+      0.05,
+      0.15,
+      0.3
+    ],
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "max_size": 7,
+    "padding": "symmetric",
+    "ssim": "7x7 uniform, sample covariance, data_range=255, valid interior"
+  }
+}
